@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burhan Karakurt — Mobile Apps</title>
+<meta name="description" content="Independent mobile developer building apps and games for iOS and Android.">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --fg: #16181d;
+    --muted: #5f6670;
+    --card: #ffffff;
+    --line: #e6e6e2;
+    --accent: #2f6df6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --fg: #eceef2;
+      --muted: #9aa1ad;
+      --card: #171a20;
+      --line: #262a32;
+      --accent: #6d9bff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 72px 20px 40px;
+    flex: 1;
+  }
+  .mark {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--accent), #9b5cff);
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: .5px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: clamp(28px, 6vw, 40px);
+    line-height: 1.15;
+    letter-spacing: -.02em;
+  }
+  .lead {
+    color: var(--muted);
+    font-size: 18px;
+    margin-top: 12px;
+    max-width: 52ch;
+  }
+  .actions { margin-top: 28px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    background: var(--fg);
+    color: var(--bg);
+  }
+  section { margin-top: 56px; }
+  h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--muted);
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .apps { display: grid; gap: 12px; }
+  .app {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--card);
+    text-decoration: none;
+    color: inherit;
+  }
+  .app img { width: 52px; height: 52px; border-radius: 12px; }
+  .app strong { display: block; }
+  .app span { color: var(--muted); font-size: 14px; }
+  .empty { color: var(--muted); font-size: 15px; }
+  footer {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 24px 20px 40px;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid var(--line);
+  }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+  <main>
+    <div class="mark">BK</div>
+    <h1>Burhan Karakurt</h1>
+    <p class="lead">Independent mobile developer building apps and games for iOS and Android.</p>
+    <div class="actions">
+      <a class="btn" href="mailto:burhankarakurt3@gmail.com">Contact</a>
+    </div>
+
+    <section>
+      <h2>Apps</h2>
+      <div class="apps">
+        <!--
+          Yeni app eklemek icin bu blogu kopyalayip doldur,
+          ikonu da repo'da icons/ klasorune koy:
+
+        <a class="app" href="STORE_LINKI">
+          <img src="icons/app-adi.png" alt="">
+          <div><strong>App Adi</strong><span>Kisa aciklama</span></div>
+        </a>
+        -->
+        <p class="empty">More apps coming soon.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    © 2026 Burhan Karakurt · <a href="mailto:burhankarakurt3@gmail.com">burhankarakurt3@gmail.com</a>
+  </footer>
+</body>
+</html>
